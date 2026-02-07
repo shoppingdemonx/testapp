@@ -15,8 +15,8 @@
                 <span class="nav-user">Hi, {{ user.username }}</span>
                 <a href="">Logout</a>
             {% else %}
-                <a href="">Login</a>
-                <a href="">Register</a>
+                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'signup' %}">Register</a>
             {% endif %}
         </div>
     </nav>
